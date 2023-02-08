@@ -35,7 +35,7 @@ def scrape_next_page_link(html_content):
 # Requisito 4
 def scrape_news(html_content):
     soup = BeautifulSoup(html_content, "html.parser")
-    
+    return soup.header.link
 
 
 # Requisito 5
