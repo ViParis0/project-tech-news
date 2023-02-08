@@ -10,5 +10,5 @@ parsel==1.7.0
 requests==2.24.0
 pymongo==3.11.0
 python-decouple==3.3
-beatifulsoup4=4.11.1
+beatifulsoup4==4.11.1
 git+https://github.com/betrybe/pytest-dependency
