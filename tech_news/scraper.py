@@ -35,7 +35,24 @@ def scrape_next_page_link(html_content):
 # Requisito 4
 def scrape_news(html_content):
     soup = BeautifulSoup(html_content, "html.parser")
-    return soup.header.link
+    url = soup.find("link", {"rel": "canonical"})["href"]
+    title = soup.find("h1", class_="entry-title").text.rstrip()
+    date = soup.find("li", class_="meta-date").text
+    author = soup.find("a", class_="url fn n").text
+    reading_time = soup.find("li", class_="meta-reading-time").text.split(" ")[
+        0
+    ]
+    sumary = soup.find("div", class_="entry-content").p.text.rstrip()
+    category = soup.find("span", class_="label").text
+    return {
+        "url": url,
+        "title": title,
+        "timestamp": date,
+        "writer": author,
+        "reading_time": int(reading_time),
+        "summary": sumary,
+        "category": category,
+    }
 
 
 # Requisito 5
