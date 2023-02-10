@@ -59,6 +59,7 @@ def scrape_news(html_content):
 
 # Requisito 5
 def get_tech_news(amount):
+    amount = int(amount)
     blog_html = fetch("https://blog.betrybe.com/")
     news_list = []
 
