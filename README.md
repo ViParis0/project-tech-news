@@ -25,3 +25,13 @@ O Tech News é um web scrapper que busca as notícias do blog da Trybe, e salva 
 ```javascript
   python3 -m pip install -r dev-requirements.txt
 ```
+
+4. Inicie o docker para subir o banco de dados:
+```javascript
+  docker compose up
+```
+
+# Para executar o menu automático digite o comando:
+```japaascript
+    tech-news-analyzer
+```
