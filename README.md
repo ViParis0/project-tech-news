@@ -1,13 +1,27 @@
-# :construction: README customizado em construção ! :construction:
-<!-- Olá, Tryber!
-Esse é apenas um arquivo inicial para o README do seu projeto no qual você pode customizar e reutilizar todas as vezes que for executar o trybe-publisher.
+# Este é o meu projeto Tech News desenvolvido na Trybe
+O Tech News é um web scrapper que busca as notícias do blog da Trybe, e salva em um banco de dados. Você pode pesquisar a notícia usando vários filtros, como tempo de leitura, melhor avaliação, tema, etc.
 
-Para deixá-lo com a sua cara, basta alterar o seguinte arquivo da sua máquina: ~/.student-repo-publisher/custom/_NEW_README.md
+## Como rodar o projeto
+### Para executar este projeto, você vai precisar do python3 instalado na sua maquina
 
-É essencial que você preencha esse documento por conta própria, ok?
-Não deixe de usar nossas dicas de escrita de README de projetos, e deixe sua criatividade brilhar!
-:warning: IMPORTANTE: você precisa deixar nítido:
-- quais arquivos/pastas foram desenvolvidos por você; 
-- quais arquivos/pastas foram desenvolvidos por outra pessoa estudante;
-- quais arquivos/pastas foram desenvolvidos pela Trybe.
--->
+1. Abra o terminal e crie um diretório no local de sua preferência com o comando **mkdir**:
+```javascript
+  mkdir tech_news
+```
+
+2. Entre no diretório que acabou de criar e depois clone o projeto:
+```javascript
+  cd tech_news
+  git clone git@github.com:ViParis0/project-tech-news.git
+```
+
+3. Crie o ambiente virtual para o projeto:
+```javascript
+  cd project-tech-news
+  python3 -m venv .venv && source .venv/bin/activate
+```
+
+3. Instale as dependencias do projeto:
+```javascript
+  python3 -m pip install -r dev-requirements.txt
+```
